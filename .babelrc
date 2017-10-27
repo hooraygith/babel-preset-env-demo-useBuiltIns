@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["env", {
+      "useBuiltIns": "usage",
+      "modules": false,
+      "loose": true
+    }]
+  ]
+}
