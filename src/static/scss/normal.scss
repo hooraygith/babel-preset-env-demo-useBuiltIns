@@ -1,0 +1,44 @@
+
+/* remove default margin */
+body, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/* box-sizing */
+body {
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+}
+body *,
+body *:before,
+body *:after {
+    box-sizing: inherit;
+}
+
+/* tap-highlight-color */
+input, select, textarea, button, a, label {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* href color */
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    color: #2d8cf0;
+    text-decoration: none;
+}
+
+/* button style */
+button {
+    border: 0;
+    outline: 0;
+}
+
+input {
+    border: 0;
+    outline: 0;
+}
+
+

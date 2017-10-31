@@ -1,0 +1,52 @@
+// 边框
+@mixin border-v($pos:bottom, $color:#e1e6eb) {
+    background-image: linear-gradient(180deg, $color, $color 50%, transparent 50%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-position: $pos left;
+}
+
+@mixin border-h($pos:left, $color:#e1e6eb) {
+    background-image: linear-gradient(180deg, $color, $color 50%, transparent 50%);
+    background-size: 1px 200%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top $pos;
+}
+
+// icon
+// arrow
+@mixin icon-arrow($dir:top, $color:#c8c8cd) {
+    position: relative;
+    &:after {
+        border: 2px solid $color;
+        border-bottom-width: 0;
+        border-left-width: 0;
+        content: " ";
+        top: 40%;
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        @if $dir==top {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+        @if $dir==bottom {
+            transform: translateY(-50%) rotate(135deg);
+        }
+        @if $dir==left {
+            transform: translateY(-50%) rotate(-135deg);
+        }
+        @if $dir==right {
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}
+
+@mixin icon-loading() {
+    border-top-color: rgb(38, 162, 255);
+    border-left-color: rgb(38, 162, 255);
+    border-bottom-color: rgb(38, 162, 255);
+    height: 28px;
+    width: 28px;
+}

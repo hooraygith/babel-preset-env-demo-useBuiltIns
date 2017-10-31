@@ -1,0 +1,16 @@
+.vscode/
+.idea/
+node_modules/
+
+/src/
+/config/
+/build/
+/packages/
+*.log
+.babelrc
+.gitignore
+.npmignore
+.postcssrc.js
+.gitlab-ci.yml
+
+/build/server.config.json

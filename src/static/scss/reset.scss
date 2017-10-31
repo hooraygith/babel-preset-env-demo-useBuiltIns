@@ -1,0 +1,28 @@
+/*
+ * 重置 mint-ui 样式，以适配 ui 规范
+ */
+
+// 重置messagebox样式
+.mint-msgbox-message {
+    padding: 5px 0;
+    line-height: 1.4;
+}
+
+// 重置 Button 样式
+.mint-button--primary {
+    background-color: #2d8cf0;
+    font-size: 15px;
+}
+
+// 重置弹框样式
+.mint-msgbox-btn {
+    font-size: 14px;
+}
+
+// 重置arrow样式
+.mint-cell-allow-right {
+    &:after {
+        width: 8px;
+        height: 8px;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <!--隐藏ios上的浏览器地址栏-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="description" content="点米科技 ehr">
+    <title>title here</title>
+
+    <style>
+        html {
+            font-size: 100px;
+            height: 100%;
+        }
+        body {
+            height: 100%;
+            overflow: auto;
+        }
+        #app {
+            height: 100%;
+        }
+        @media screen and (min-width: 600px) {
+            #app {
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body style="font-size: 14px;">
+    <div id="app"></div>
+    <script>
+        (function(doc, win) {
+            //手持方向检测
+           var recalc = function (e) {
+                var docEl = doc.documentElement
+                var clientWidth = docEl.clientWidth
+                var clientHeight = docEl.clientHeight
+                var fontH
+                var supportOrientation = (typeof win.orientation === 'number' && typeof win.onorientationchange === 'object')
+                if (!clientWidth) return;
+                if (supportOrientation) {
+                    var orientation = win.orientation;
+                    switch(orientation){
+                        case 90:
+                        case -90:
+                            fontH = clientHeight;
+                            break;
+                        default:
+                            fontH = clientWidth;
+                            break;
+                    }
+                } else {
+                    fontH = (win.innerWidth > win.innerHeight) ? clientHeight : clientWidth;
+                }
+                if (clientWidth >= 600) {
+                    docEl.style.fontSize = '80px';
+                } else {
+                    docEl.style.fontSize = (100 * fontH) / 750 + 'px';
+                }
+            };
+            if (!doc.addEventListener) return;
+            win.addEventListener('resize', recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</body>
+</html>
