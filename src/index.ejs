@@ -72,6 +72,11 @@
             if (!doc.addEventListener) return;
             win.addEventListener('resize', recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
+
+            // 错误报告
+            window.onerror = function(messageOrEvent, source, lineno, colno, error) {
+                alert(messageOrEvent + '   ' +  source + '     ' + lineno + '     ' + colno + '     ' + error)
+            }
         })(document, window);
     </script>
 </body>
