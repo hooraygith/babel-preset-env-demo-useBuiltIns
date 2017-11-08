@@ -12,10 +12,10 @@ import router from './router/router.js'
 import Util from './util'
 
 window['Vue'] = Vue
-Vue.$Util = Util
-Vue.$Api = Api
-Vue.$Message = Mint.MessageBox
-Vue.$Toast = Mint.Toast
+Vue.$Util = Vue.prototype.$Util = Util
+Vue.$Api = Vue.prototype.$Api = Api
+Vue.$Message = Vue.prototype.$Message = Mint.MessageBox
+Vue.$Toast = Vue.prototype.$Toast = Mint.Toast
 
 Vue.use(Mint)
 Vue.use(VeeValidate)

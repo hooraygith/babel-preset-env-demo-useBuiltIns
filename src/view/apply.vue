@@ -5,22 +5,22 @@
             <div :class="s.form_item">
                 <label :class="[s.form_label, s.required]">客户名称</label>
                 <div :class="s.form_input">
-                    <input type="text" placeholder="请输入" v-validate="'required|name'" name="customer_name" data-vv-validate-on="blur" v-model="model.customer_name">
-                    <span :class="s.form_error" v-show="errors.has('customer_name')">{{errors.first('customer_name')}}</span>
+                    <input type="text" placeholder="请输入" v-validate="'required|name'" name="客户名称" data-vv-validate-on="blur" v-model="model.customer_name">
+                    <span :class="s.form_error" v-show="errors.has('客户名称')">{{errors.first('客户名称')}}</span>
                 </div>
             </div>
             <div :class="s.form_item">
                 <label :class="[s.form_label, s.required]">联系人姓名</label>
                 <div :class="s.form_input">
-                    <input type="text" placeholder="请输入" v-validate="'required|name'" name="contact_name" data-vv-validate-on="blur" v-model="model.contact_name">
-                    <span :class="s.form_error" v-show="errors.has('contact_name')">{{errors.first('contact_name')}}</span>
+                    <input type="text" placeholder="请输入" v-validate="'required|name'" name="联系人姓名" data-vv-validate-on="blur" v-model="model.contact_name">
+                    <span :class="s.form_error" v-show="errors.has('联系人姓名')">{{errors.first('联系人姓名')}}</span>
                 </div>
             </div>
             <div :class="s.form_item">
                 <label :class="[s.form_label, s.required]">联系人手机号</label>
                 <div :class="s.form_input">
-                    <input type="mobile" placeholder="请输入" v-validate="'required|mobile'" name="mobile" data-vv-validate-on="blur" v-model="model.contact_mobile">
-                    <span :class="s.form_error" v-show="errors.has('mobile')">{{errors.first('mobile')}}</span>
+                    <input type="mobile" placeholder="请输入" v-validate="'required|mobile'" name="联系人手机号" data-vv-validate-on="blur" v-model="model.contact_mobile">
+                    <span :class="s.form_error" v-show="errors.has('联系人手机号')">{{errors.first('联系人手机号')}}</span>
                 </div>
             </div>
             <div :class="s.form_item">
