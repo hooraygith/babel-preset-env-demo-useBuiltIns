@@ -58,6 +58,9 @@ module.exports = {
                 limit: 1,
                 name: 'font/[name]-[hash:8].[ext]'
             }
+        }, {
+            test: /\.(html|ejs)$/,
+            loader: 'html-loader'
         }]
     },
     plugins: [
