@@ -7,14 +7,14 @@ config.plugins.push(new webpack.DefinePlugin({ //全局常量
     URL_API: "'https://api-dev.apidomain.com'"
 }))
 
-config.output.filename = 'js/[name]-[hash:8].js'
+// 加快dev速度
+config.output.filename = 'js/[name].js'
+config.output.chunkFilename = 'js/[name].js'
 config.plugins.push(new webpack.HotModuleReplacementPlugin())
 
 config.output.path = path.resolve(__dirname, '../dist/dev-server/')
 
 config.devServer = {
-    // publicPath: "/",
-    // contentBase: "../dist/dev-server/",
     hot: true,
     proxy: {
         "/": {
