@@ -9,7 +9,8 @@ webpack(config, (err, stats) => {
     }
     console.log(stats.toString({
         chunks: false, // Makes the build much quieter
-        colors: true
+        colors: true,
+        optimizationBailout: true
     }))
     console.log('打包成功，请访问： http//localhost:12000')
 })

@@ -90,6 +90,9 @@ module.exports = {
             chunks: ['vendor']
         }),
 
+        // scope hosting
+        new webpack.optimize.ModuleConcatenationPlugin(),
+
         // css 插入 html head
         new ExtractTextPlugin('css/[name]-[contenthash:8].css'),
 
