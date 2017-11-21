@@ -1,6 +1,6 @@
 {
   "presets": [
-    ["env", {
+    ["@babel/env", {
       "useBuiltIns": "usage",
       "modules": false,
       "loose": true
