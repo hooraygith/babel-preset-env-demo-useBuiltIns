@@ -21,11 +21,12 @@
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
     "@babel/core": "^7.0.0-beta.32",
-    "babel-loader": "^8.0.0-beta.0",
     "@babel/polyfill": "^7.0.0-beta.32",
     "@babel/preset-env": "^7.0.0-beta.32",
+    "autoprefixer": "^7.1.6",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",

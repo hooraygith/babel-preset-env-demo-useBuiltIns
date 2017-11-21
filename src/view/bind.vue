@@ -114,6 +114,19 @@ export default {
         if (Vue.$Util.getCache('is_bound')) {
             this.$router.push({ name: 'my' })
         }
+
+        // 测试 ...
+        const a = {
+            aa: '1',
+            bb: '2'
+        }
+
+        const c = {
+            ...a,
+            cc: '3'
+        }
+
+        console.log(44, c)
     }
 }
 </script>
