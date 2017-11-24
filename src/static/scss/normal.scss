@@ -21,11 +21,7 @@ input, select, textarea, button, a, label {
 }
 
 /* href color */
-a,
-a:hover,
-a:focus,
-a:active,
-a:visited {
+a {
     color: #2d8cf0;
     text-decoration: none;
 }
@@ -39,6 +35,17 @@ button {
 input {
     border: 0;
     outline: 0;
+}
+
+img, video {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
