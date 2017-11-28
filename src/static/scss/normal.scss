@@ -12,7 +12,7 @@ html {
 /* box-sizing */
 body {
     box-sizing: border-box;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;  // ios scroll smooth when body height 100%
 }
 body *,
 body *:before,
@@ -57,6 +57,10 @@ img, video {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+textarea {
+    outline: 0;
 }
 
 
