@@ -42,10 +42,8 @@ input {
     outline: 0;
 }
 
-
-ul, ol {
-    margin: 0;
-    padding: 0;
+textarea {
+    outline: 0;
 }
 
 img, video {
@@ -59,8 +57,15 @@ table {
     border-spacing: 0;
 }
 
-textarea {
-    outline: 0;
+ul, ol {
+    margin: 0;
+    padding: 0;
 }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 
 
