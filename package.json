@@ -15,16 +15,16 @@
   "dependencies": {
     "axios": "^0.17.1",
     "lscache": "^1.1.0",
-    "mint-ui": "^2.2.11",
+    "mint-ui": "^2.2.12",
     "vee-validate": "^2.0.0-rc.25",
     "vue": "^2.5.9",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.32",
-    "@babel/polyfill": "^7.0.0-beta.32",
-    "@babel/preset-env": "^7.0.0-beta.32",
-    "autoprefixer": "^7.1.6",
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/polyfill": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "autoprefixer": "^7.2.1",
     "babel-loader": "^8.0.0-beta.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "clean-webpack-plugin": "^0.1.17",
@@ -40,7 +40,7 @@
     "url-loader": "^0.6.2",
     "vue-loader": "^13.5.0",
     "vue-template-compiler": "^2.5.9",
-    "webpack": "^3.8.1",
+    "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.5"
   },
   "browserslist": [
